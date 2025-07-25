@@ -1,23 +1,33 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
+<testng-results ignored="0" total="5" passed="5" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-07-25T22:26:56 IST" name="Suite" finished-at="2025-07-25T22:27:14 IST" duration-ms="17346">
+  <suite started-at="2025-07-25T22:49:54 IST" name="Default suite" finished-at="2025-07-25T22:49:54 IST" duration-ms="108">
     <groups>
     </groups>
-    <test started-at="2025-07-25T22:26:56 IST" name="Test" finished-at="2025-07-25T22:27:14 IST" duration-ms="17346">
-      <class name="testNgBasics._20_LearnFindElements">
-        <test-method signature="main()[pri:0, instance:testNgBasics._20_LearnFindElements@4550bb58]" started-at="2025-07-25T22:26:57 IST" name="main" finished-at="2025-07-25T22:27:05 IST" duration-ms="8211" status="PASS">
+    <test started-at="2025-07-25T22:49:54 IST" name="Default test" finished-at="2025-07-25T22:49:54 IST" duration-ms="108">
+      <class name="testNgBasics._01_LearnAttributes1">
+        <test-method signature="signOut()[pri:-5, instance:testNgBasics._01_LearnAttributes1@4ec4f3a0]" started-at="2025-07-25T22:49:54 IST" name="signOut" finished-at="2025-07-25T22:49:54 IST" duration-ms="16" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- main -->
-      </class> <!-- testNgBasics._20_LearnFindElements -->
-      <class name="testNgBasics._21_LearnWindowHandling">
-        <test-method signature="windowHandling()[pri:0, instance:testNgBasics._21_LearnWindowHandling@59662a0b]" started-at="2025-07-25T22:26:57 IST" name="windowHandling" finished-at="2025-07-25T22:27:14 IST" duration-ms="17275" status="PASS">
+        </test-method> <!-- signOut -->
+        <test-method signature="singUp()[pri:-1, instance:testNgBasics._01_LearnAttributes1@4ec4f3a0]" started-at="2025-07-25T22:49:54 IST" name="singUp" finished-at="2025-07-25T22:49:54 IST" duration-ms="11" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- windowHandling -->
-      </class> <!-- testNgBasics._21_LearnWindowHandling -->
-    </test> <!-- Test -->
-  </suite> <!-- Suite -->
+        </test-method> <!-- singUp -->
+        <test-method signature="login()[pri:0, instance:testNgBasics._01_LearnAttributes1@4ec4f3a0]" started-at="2025-07-25T22:49:54 IST" name="login" finished-at="2025-07-25T22:49:54 IST" duration-ms="3" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login -->
+        <test-method signature="searchProduct()[pri:3, instance:testNgBasics._01_LearnAttributes1@4ec4f3a0]" started-at="2025-07-25T22:49:54 IST" name="searchProduct" finished-at="2025-07-25T22:49:54 IST" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- searchProduct -->
+        <test-method signature="addToCart()[pri:4, instance:testNgBasics._01_LearnAttributes1@4ec4f3a0]" started-at="2025-07-25T22:49:54 IST" name="addToCart" finished-at="2025-07-25T22:49:54 IST" duration-ms="3" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addToCart -->
+      </class> <!-- testNgBasics._01_LearnAttributes1 -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>
