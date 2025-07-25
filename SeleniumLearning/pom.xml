@@ -4,6 +4,7 @@
   <artifactId>SeleniumLearning</artifactId>
   <version>0.0.1-SNAPSHOT</version>
   <dependencies>
+
 <!-- https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-java -->
 <dependency>
     <groupId>org.seleniumhq.selenium</groupId>
@@ -15,7 +16,6 @@
     <groupId>org.testng</groupId>
     <artifactId>testng</artifactId>
     <version>7.10.2</version>
-    <scope>test</scope>
 </dependency>
   </dependencies>
 </project>
