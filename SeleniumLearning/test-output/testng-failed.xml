@@ -3,11 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="testNgBasics._08_LeanDataProvider">
+      <class name="testNgBasics._20_LearnFindElements">
         <methods>
-          <include name="test"/>
+          <include name="main"/>
         </methods>
-      </class> <!-- testNgBasics._08_LeanDataProvider -->
+      </class> <!-- testNgBasics._20_LearnFindElements -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

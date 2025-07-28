@@ -22,7 +22,7 @@ public class _20_LearnFindElements {
 		driver.manage().window().maximize();
 		//implicit wait
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
-		List<WebElement> Crickets=driver.findElements(By.xpath("//*[contains(text(),'facebook') or contains(text(),'Facebook')]"));
+		List<WebElement> Crickets=driver.findElements(By.xpath("//*[clontains(text(),'facebook') or contains(text(),'Facebook')]"));
 		System.out.println(Crickets.size());
 		driver.quit();
 
