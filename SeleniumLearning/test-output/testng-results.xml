@@ -2,38 +2,54 @@
 <testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-07-30T01:00:04 IST" name="Suite" finished-at="2025-07-30T01:00:10 IST" duration-ms="6410">
+  <suite started-at="2025-07-30T01:52:45 IST" name="Default suite" finished-at="2025-07-30T01:53:05 IST" duration-ms="19460">
     <groups>
     </groups>
-    <test started-at="2025-07-30T01:00:04 IST" name="Test" finished-at="2025-07-30T01:00:10 IST" duration-ms="6410">
+    <test started-at="2025-07-30T01:52:45 IST" name="Default test" finished-at="2025-07-30T01:53:05 IST" duration-ms="19460">
       <class name="org.learn.test.TC001Login">
-        <test-method is-config="true" signature="startApp()[pri:0, instance:org.learn.test.TC001Login@3eb738bb]" started-at="2025-07-30T01:00:04 IST" name="startApp" finished-at="2025-07-30T01:00:07 IST" duration-ms="2737" status="PASS">
+        <test-method is-config="true" signature="setData()[pri:0, instance:org.learn.test.TC001Login@79079097]" started-at="2025-07-30T01:52:45 IST" name="setData" finished-at="2025-07-30T01:52:45 IST" duration-ms="17" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setData -->
+        <test-method is-config="true" signature="startApp()[pri:0, instance:org.learn.test.TC001Login@79079097]" started-at="2025-07-30T01:52:47 IST" name="startApp" finished-at="2025-07-30T01:52:55 IST" duration-ms="8908" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- startApp -->
-        <test-method signature="loginTest()[pri:0, instance:org.learn.test.TC001Login@3eb738bb]" started-at="2025-07-30T01:00:07 IST" name="loginTest" finished-at="2025-07-30T01:00:10 IST" duration-ms="3316" status="PASS">
+        <test-method signature="loginTest([Ljava.lang.String;)[pri:0, instance:org.learn.test.TC001Login@79079097]" started-at="2025-07-30T01:52:55 IST" name="loginTest" data-provider="data" finished-at="2025-07-30T01:52:56 IST" duration-ms="1015" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[Ljava.lang.String;@442f92e6]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginTest -->
-        <test-method is-config="true" signature="closeApp()[pri:0, instance:org.learn.test.TC001Login@3eb738bb]" started-at="2025-07-30T01:00:10 IST" name="closeApp" finished-at="2025-07-30T01:00:10 IST" duration-ms="282" status="PASS">
+        <test-method is-config="true" signature="closeApp()[pri:0, instance:org.learn.test.TC001Login@79079097]" started-at="2025-07-30T01:52:56 IST" name="closeApp" finished-at="2025-07-30T01:52:57 IST" duration-ms="534" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeApp -->
+        <test-method is-config="true" signature="startApp()[pri:0, instance:org.learn.test.TC001Login@79079097]" started-at="2025-07-30T01:52:57 IST" name="startApp" finished-at="2025-07-30T01:53:02 IST" duration-ms="5051" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startApp -->
+        <test-method signature="loginTest([Ljava.lang.String;)[pri:0, instance:org.learn.test.TC001Login@79079097]" started-at="2025-07-30T01:53:02 IST" name="loginTest" data-provider="data" finished-at="2025-07-30T01:53:04 IST" duration-ms="2133" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[Ljava.lang.String;@1ffcf674]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginTest -->
+        <test-method is-config="true" signature="closeApp()[pri:0, instance:org.learn.test.TC001Login@79079097]" started-at="2025-07-30T01:53:04 IST" name="closeApp" finished-at="2025-07-30T01:53:05 IST" duration-ms="394" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeApp -->
       </class> <!-- org.learn.test.TC001Login -->
-      <class name="org.learn.test.TC002Login">
-        <test-method is-config="true" signature="startApp()[pri:0, instance:org.learn.test.TC002Login@5e0e82ae]" started-at="2025-07-30T01:00:04 IST" name="startApp" finished-at="2025-07-30T01:00:09 IST" duration-ms="5065" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- startApp -->
-        <test-method signature="loginTest()[pri:0, instance:org.learn.test.TC002Login@5e0e82ae]" started-at="2025-07-30T01:00:09 IST" name="loginTest" finished-at="2025-07-30T01:00:09 IST" duration-ms="361" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- loginTest -->
-        <test-method is-config="true" signature="closeApp()[pri:0, instance:org.learn.test.TC002Login@5e0e82ae]" started-at="2025-07-30T01:00:09 IST" name="closeApp" finished-at="2025-07-30T01:00:09 IST" duration-ms="195" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- closeApp -->
-      </class> <!-- org.learn.test.TC002Login -->
-    </test> <!-- Test -->
-  </suite> <!-- Suite -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>

@@ -3,12 +3,18 @@ package org.learn.test;
 import org.learn.pages.LoginPage;
 import org.learn.seleniumBase.learnBase;
 import org.testng.Assert;
+import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
 public class TC001Login extends learnBase{
+	
+	@BeforeTest
+	public void setData() {
+		fileName = "TC001";
+	}
 
-	@Test
-	public void loginTest(){
+	@Test(dataProvider = "data")
+	public void loginTest(String[] data){//string us, string pass
 		/*
 		 * LoginPage lp = new LoginPage(); lp.enterPassword(null);
 		 * lp.enterPassword(null);
@@ -22,8 +28,8 @@ public class TC001Login extends learnBase{
 		
 		
 		new LoginPage(driver)
-		.enterUserName("kinnesperumal")
-		.enterPassword("Mastermind@01")
+		.enterUserName(data[0])
+		.enterPassword(data[1])
 		.clickLogin();
 	}
 }
