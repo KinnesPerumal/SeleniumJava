@@ -27,6 +27,10 @@ public class LoginPage extends learnBase{
 	 * @param username - pas the user to be login
 	 * @return 
 	 */
+	public void enterUsername() {
+		
+	}
+	
 	public LoginPage enterUserName(String username){
 		driver.findElement(By.name("username")).sendKeys(username);
 		return this;
