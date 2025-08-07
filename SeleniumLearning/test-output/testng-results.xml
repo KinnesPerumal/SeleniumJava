@@ -1,17 +1,70 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-07-31T01:27:48 IST" name="Default suite" finished-at="2025-07-31T01:28:13 IST" duration-ms="24999">
+  <suite started-at="2025-08-07T16:42:11 IST" name="Default suite" finished-at="2025-08-07T16:42:51 IST" duration-ms="40095">
     <groups>
     </groups>
-    <test started-at="2025-07-31T01:27:48 IST" name="Default test" finished-at="2025-07-31T01:28:13 IST" duration-ms="24999">
-      <class name="org.learn.test.GoogleTest">
-        <test-method signature="searchKinnes()[pri:0, instance:org.learn.test.GoogleTest@7e057f43]" started-at="2025-07-31T01:27:48 IST" name="searchKinnes" finished-at="2025-07-31T01:28:13 IST" duration-ms="24911" status="PASS">
+    <test started-at="2025-08-07T16:42:11 IST" name="Default test" finished-at="2025-08-07T16:42:51 IST" duration-ms="40095">
+      <class name="org.learn.test.Login">
+        <test-method is-config="true" signature="lauch()[pri:0, instance:org.learn.test.Login@34e9fd99]" started-at="2025-08-07T16:42:11 IST" name="lauch" finished-at="2025-08-07T16:42:21 IST" duration-ms="9648" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- searchKinnes -->
-      </class> <!-- org.learn.test.GoogleTest -->
+        </test-method> <!-- lauch -->
+        <test-method signature="login()[pri:0, instance:org.learn.test.Login@34e9fd99]" started-at="2025-08-07T16:42:21 IST" name="login" finished-at="2025-08-07T16:42:51 IST" duration-ms="30039" status="FAIL">
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[Element No Found
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.34.0', revision: '707dcb4246*'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.6'
+Driver info: driver.version: unknown]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: Element No Found
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.34.0', revision: '707dcb4246*'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.6'
+Driver info: driver.version: unknown
+at org.learn.seleniumBase.SeleniumBase.element(SeleniumBase.java:88)
+at org.learn.test.Login.login(Login.java:22)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:739)
+at org.testng.TestRunner.run(TestRunner.java:614)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login -->
+        <test-method is-config="true" signature="closingbrowser()[pri:0, instance:org.learn.test.Login@34e9fd99]" started-at="2025-08-07T16:42:51 IST" name="closingbrowser" finished-at="2025-08-07T16:42:51 IST" duration-ms="338" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closingbrowser -->
+      </class> <!-- org.learn.test.Login -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

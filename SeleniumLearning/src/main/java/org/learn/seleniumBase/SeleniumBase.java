@@ -6,7 +6,9 @@ import java.util.Set;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
+import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebDriverException;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.edge.EdgeDriver;
@@ -19,7 +21,7 @@ import net.bytebuddy.asm.Advice.Return;
 
 public class SeleniumBase implements SeleniumAPI {
 
-	int durations = 60;
+	int durations = 30;
 	int maxWaitTime = 10;
 	RemoteWebDriver driver = null;
 	WebDriverWait wait = null;
@@ -67,18 +69,28 @@ public class SeleniumBase implements SeleniumAPI {
 	}
 
 	public WebElement element(Locators type, String value) {
-		switch (type) {
-		case id:
-			return driver.findElement(By.id(value));
-		case name:
-			return driver.findElement(By.name(value));
-		case xpath:
-			return driver.findElement(By.xpath(value));
-		case link:
-			return driver.findElement(By.linkText(value));
+		try {
+			switch (type) {
+			case id:
+				return driver.findElement(By.id(value));
+			case name:
+				return driver.findElement(By.name(value));
+			case xpath:
+				return driver.findElement(By.xpath(value));
+			case link:
+				return driver.findElement(By.linkText(value));
 
-		default:
-			break;
+			default:
+				break;
+			}
+		} catch (NoSuchElementException e) {
+			System.err.println("Element Not found => "+e.getMessage());
+			throw new NoSuchElementException("Element No Found");
+		} catch (WebDriverException e) {
+			System.err.println(e.getMessage());
+			throw new WebDriverException("some Unknown webdriver error");
+		} catch (Exception e) {
+			System.err.println(e.getMessage());
 		}
 		return null;
 	}
@@ -113,9 +125,16 @@ public class SeleniumBase implements SeleniumAPI {
 	}
 
 	public void type(WebElement ele, String testData) {
-		WebElement element = isElementVisible(ele); // ctrl+2+M
-		element.clear();
-		element.sendKeys(testData);
+		try {
+			WebElement element = isElementVisible(ele); // ctrl+2+M
+			element.clear();
+			element.sendKeys(testData);
+		} catch (NullPointerException e) {
+			// TODO Auto-generated catch block
+			System.out.println("Element might be null => "+e.getMessage());
+		} catch (Exception e) {
+			System.err.println(e.getMessage()); 
+		}
 	}
 
 	// Method for explicit wait
