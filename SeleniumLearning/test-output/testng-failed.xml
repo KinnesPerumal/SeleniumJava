@@ -3,13 +3,15 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="org.learn.test.Login">
+      <class name="org.learn.utils.MyTest">
         <methods>
-          <include name="login"/>
-          <include name="lauch"/>
-          <include name="closingbrowser"/>
+          <include name="myTest"/>
+          <include name="stopReport"/>
+          <include name="startReport"/>
+          <include name="setData"/>
+          <include name="createTestCase"/>
         </methods>
-      </class> <!-- org.learn.test.Login -->
+      </class> <!-- org.learn.utils.MyTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
