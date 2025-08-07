@@ -87,9 +87,10 @@ public interface SeleniumAPI {
 	/**
 	 * This function will wait until the element is ready and gets the input
 	 * @param ele
+	 * @param Testdata
 	 */
 	
-	void appendText(WebElement ele);
+	void appendText(WebElement ele, String testData);
 	
 	/**
 	 * This funciton retrun the active page title
@@ -110,7 +111,7 @@ public interface SeleniumAPI {
 	 * @return
 	 */
 	
-	boolean isDisplayed();
+	boolean isDisplayed(WebElement ele);
 	
 	
 }
